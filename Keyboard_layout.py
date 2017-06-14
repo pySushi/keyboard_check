@@ -3,7 +3,7 @@ from _winreg import *
 
 import layouts
 
-# Return keyboard layout hex code after detecting the layout
+# Return keyboard layout hex code for the application in the foreground
 def getKeyboardType():
 	win =  windll.user32.GetForegroundWindow() 
 	tid = windll.user32.GetWindowThreadProcessId(win, 0) 
