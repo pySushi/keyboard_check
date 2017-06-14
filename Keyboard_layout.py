@@ -1,6 +1,7 @@
 from ctypes import * 
 from _winreg import * 
 
+import layouts
 
 # Return keyboard layout hex code after detecting the layout
 def getKeyboardType():
